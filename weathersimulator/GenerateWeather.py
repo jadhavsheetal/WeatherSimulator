@@ -10,10 +10,10 @@ class GenerateWeather :
 	# Constructor 
 	# initializes training data files, data frames and classifier for summary
 	def __init__(self) :
-		self.cityDFPath = "weathersimulator/historical-hourly-weather-data/city_attributes.csv"
-		self.trainDF = "weathersimulator/historical-hourly-weather-data/weather_train.csv"
-		self.testDF = "weathersimulator/historical-hourly-weather-data/weather_test.csv"
-		self.classifierPath = "weathersimulator/classifier/summary.dat"
+		self.cityDFPath = os.path.join(os.path.dirname(__file__),"historical-hourly-weather-data/city_attributes.csv")
+		self.trainDF = os.path.join(os.path.dirname(__file__),"historical-hourly-weather-data/weather_train.csv")
+		self.testDF = os.path.join(os.path.dirname(__file__),"historical-hourly-weather-data/weather_test.csv")
+		self.classifierPath = os.path.join(os.path.dirname(__file__),"classifier/summary.dat")
 		self.cities = None
 		self.model = None
 		self.train = None 

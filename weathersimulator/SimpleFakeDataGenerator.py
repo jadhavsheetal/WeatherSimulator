@@ -3,6 +3,7 @@ import random
 import math
 import FileUtil
 
+
 # A simple implementation for generating Fake Weather Data 
 # Approach :
 #	1. Generate numerical data for temperature, humidity, pressure

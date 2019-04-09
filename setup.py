@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 import versioneer
 
 requirements = [
@@ -15,10 +15,11 @@ setup(
     author="Sheetal Jadhav",
     author_email='jadhavsheetal@gmail.com',
     url='https://github.com/jadhavsheetal/WeatherSimulator',
-    packages=['weathersimulator'],
+    packages=find_packages(),
+	include_package_daya = True,
     entry_points={
         'console_scripts': [
-            'weathersimulator=weathersimulator.cli:cli'
+            'weathersimulator=weathersimulator.GenerateWeather:main'
         ]
     },
     install_requires=requirements,
@@ -26,5 +27,7 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.6',
-    ]
+    ],
+	test_suite='tests',
+
 )

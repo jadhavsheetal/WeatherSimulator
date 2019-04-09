@@ -23,12 +23,22 @@ Add a list of features.
 Example
 -------
 
-Add a short example
+
 
 ::
+	Navigate to the project's root directory where the setup script called `setup.py` is located::
 
-    show some example code here
+    $ cd weathersimulator/
+	
+    $ python weathersimulator/GenerateWeather.py Chicago 41.850029 -87.650047  "2017-11-12 10:00:08"
 
+	Inputs : (All are mandatory)
+		cityName - Name of an US/Canadian city
+		latitude - Latitude of the city
+		longitude - Longitude of the city
+		inputDate - Starting time for the 10 hours for which results will be generated
+		
+	Output : Prints the fake weather data 
 
 Documentation
 -------------

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="1" failures="0" name="pytest" skipped="0" tests="1" time="0.241"><testcase classname="" file="tests/test_GenerateWeather.py" name="tests.test_GenerateWeather" time="0.000"><error message="collection failure">ImportError while importing test module &apos;D:\SparkProjects\WeatherSimulator\WeatherSimulator\tests\test_GenerateWeather.py&apos;.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+tests\test_GenerateWeather.py:2: in &lt;module&gt;
+    from GenerateWeather import GenerateWeather
+E   ModuleNotFoundError: No module named &apos;GenerateWeather&apos;</error></testcase></testsuite>
