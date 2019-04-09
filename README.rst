@@ -37,11 +37,11 @@ The project serves as a simple implementation to generate fake weather data i.e.
 for a given city and datetime
 
 There are two main steps in the fake data generation
-	1. Generate numerical data for temperature, pressure and humidity from the dataset available as a csv file "weather_data_merged.csv"
+	1. Generate numerical data for temperature, pressure and humidity from the dataset available as a csv file "weather_train.csv"
 	2. Using ML algorithm predict the correct weather summary such as Sunny, Rain or Snow based on the numerical data (temperature, pressure and humidity)
 	
 
-Approach for Step 1:
+	Approach for Step 1:
 	This is a simplistic implementation for generating fake weather data using the past data available in the csv file. 
 	Using the past data for the feature e.g. humidity for the same city and same day and hour, we first
 	1. Calculate the mean for that range 

@@ -21,12 +21,12 @@ class SimpleFakeDataGenerator :
 	#	trainDF - Weather data split for training, includes city name, datetime (hourly) , temperature, pressure, humidity, summary
 	#	testDF - Used for both creating classifier and used in testing
 	#	classifierPath - Path where the classifier used for predicting summary is saved
-    def __init__(self, cities, trainDF, testDF, classifierPath) :
+    def __init__(self, cities, trainDF, testDF, model) :
         self.citiesDF = cities
         self.trainDF = trainDF
         self.testDF = testDF
         self.num = 5
-        self.model = FileUtil.getObjectFromPath(classifierPath)
+        self.model = model
 
 	# Get city closest to the input city. This is used when no exact match is found for the city in the training/reference dataset
 	# city - City object 
