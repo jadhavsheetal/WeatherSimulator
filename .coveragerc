@@ -1,0 +1,7 @@
+[report]
+omit =
+    setup.py
+    weathersimulator/__main__.py
+    weathersimulator/_version.py
+    versioneer.py
+    tests/*
