@@ -82,7 +82,9 @@ A suite of tests were built using `pytest <http://pytest.org/latest/>`_.
 
 To run the test suite, from the command line in the project's root directory::
 
-    $ py.test tests/
+	$ cd weathersimulator/weathersimulator
+
+    $ python -m unittest  TestGenerateWeather
 
 
 
